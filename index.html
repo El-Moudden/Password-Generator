@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="all.min.css">
+    <title>Password Generator</title>
+</head>
+<body>
+
+    <div class="container">
+
+
+        <header>
+            <img src="./images/logo.png" alt="">
+            <h1>Password Generator</h1>
+            <p>Create a Powerfull Password</p>
+        </header>
+
+
+        <div class="inputs">
+            <div class="input-box">
+                <input type="text" class="pass-box">
+                <div id="genBtn"><i class="fa-solid fa-rotate-right" ></i></div>
+                <p style="font-size: 12px;margin-top: 5px;" id="passStrength">weak</p>
+            </div>
+            
+            <div class="copy">
+                <div class="copyBtn"><i class="fa-solid fa-copy">copy</i></div>
+            </div>
+        </div>
+
+
+        <div class="rows">
+            <div class="passwordLength">
+                <div class="pass-length">
+                    <p>password length</p>
+                    <span id="pass-length">9</span>
+                </div>
+                
+                <input type="range" name="passLength" id="passRange" value="9" min="0" max="25">
+            </div>
+            <div class="checkBoxes">
+                <div class="checkbox">
+                    <label for="uppercase">Uppercase</label>
+                    <input type="checkbox" name="uppercase" id="uppercase" checked>
+                </div>
+
+                <div class="checkbox">
+                    <label for="lowercase">Lowercase</label>
+                    <input type="checkbox" name="lowercase" id="lowercase" checked>
+                </div>
+
+                <div class="checkbox">
+                    <label for="numbers">Numbers</label>
+                    <input type="checkbox" name="numbers" id="numbers" checked>
+                </div>
+
+                <div class="checkbox">
+                    <label for="specialCharacters">Special Characters</label>
+                    <input type="checkbox" name="specialCharacters" id="specialCharacters">
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <script src="script.js"></script>
+    <script src="all.min.js"></script>
+    
+</body>
+</html>
